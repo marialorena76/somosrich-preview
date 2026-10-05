@@ -80,6 +80,8 @@
             #home_vender{padding-top:20px!important}
             .media-statistic-2{margin-bottom:35px}
         }
+        /* RICH 2026 - carruseles: ancho estable aunque las fotos tarden */
+        .slick-content.js-slick-content > .slick-list{flex:1 1 100%;width:100%;min-width:0}
     </style>
 </head>
 
@@ -687,7 +689,10 @@
     <script type="text/javascript" src="js/config-revolution.min.js"></script>
 
     <!-- Main JS-->
-    <script src="js/global.js"></script>    
+    <script src="js/global.js"></script>    <script>/* RICH 2026 - recalcular carruseles cuando terminan de cargar las fotos */
+    (function($){ if(!$) return; $(window).on('load', function(){ $('.js-slick-content.slick-initialized').each(function(){ try{ $(this).slick('setPosition'); }catch(e){} }); }); })(window.jQuery);</script>
+
+    
         <script src="js/sweetalert.min.js"></script>
     <script type="application/javascript">
         $(document).ready(function() {
