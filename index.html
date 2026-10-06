@@ -51,6 +51,10 @@
         
         <style>
         /* RICH 2026 - Home */
+        /* RICH 2026 - sombra en slider para legibilidad */
+        .rev_slider .slotholder:after{content:"";position:absolute;top:0;left:0;right:0;bottom:0;background:linear-gradient(90deg,rgba(0,0,0,.62) 0%,rgba(0,0,0,.42) 45%,rgba(0,0,0,.18) 100%);z-index:2;pointer-events:none}
+        .rev_slider .rev-text-1,.rev_slider .rev-text-2{text-shadow:0 2px 12px rgba(0,0,0,.45)}
+        @media (max-width:767px){ .rev_slider .slotholder:after{background:rgba(0,0,0,.5)} }
         .title-1,.title-2,.title-3,.rev-text-2{font-weight:600!important}
         .media-testi,.media-testi p,.media-testi .media__text,.media-testi a,.media-testi .job,.media-testi h4{color:#2a2420!important}
         /* RICH 2026 - espacios en celular */
@@ -277,7 +281,7 @@
 <div class="container">
 <div class="section-title">
 <h5 class="title-sub">pilares de RICH</h5>
-<h2 class="title-1">El mercado muestra casas. RICH representa personas.</h2>
+<h2 class="title-1">El mercado muestra casas.<br>RICH representa personas.</h2>
 </div>
 <div class="row no-gutters">
 <div class="col-md-6 col-lg-4">
