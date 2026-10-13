@@ -149,3 +149,13 @@
         display: block;
     }
 }
+/* Home - Quiénes somos: párrafos con espacio corto y botón más arriba */
+.media-about .media__text--compact {
+  margin-bottom:32px
+}
+.media-about .media__text--compact p {
+  margin-bottom:12px
+}
+.media-about .media__text--compact p:last-child {
+  margin-bottom:0
+}
