@@ -159,3 +159,34 @@
 .media-about .media__text--compact p:last-child {
   margin-bottom:0
 }
+
+/* Comprar - título principal */
+.title-2--comprar {
+  font-size:42px
+}
+
+/* Mobile: títulos principales más chicos y datos de Vender en 2 columnas compactas */
+@media (max-width:575px) {
+  .title-2,
+  .title-2--comprar {
+    font-size:30px;
+    line-height:1.25
+  }
+  .project-style-1 .entry-header .title-2 {
+    padding-bottom:30px
+  }
+  .project-style-1 .entry-meta {
+    padding:28px 20px 8px;
+    margin-bottom:35px
+  }
+  .project-style-1 .entry-meta__item {
+    margin-bottom:20px
+  }
+  .project-style-1 .entry-meta__item .key {
+    font-size:15px
+  }
+  .project-style-1 .entry-meta__item .value {
+    display:block;
+    line-height:1.4
+  }
+}
